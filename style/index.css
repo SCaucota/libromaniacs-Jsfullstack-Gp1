@@ -120,3 +120,103 @@
     text-align: center;
     padding: 0.5rem;
 }
+
+/*---CONTACTO---*/
+
+#sectionContacto{
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloContacto{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.textoContacto{
+    font-size: 25px;
+}
+
+.datosContacto{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dato{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.dato img{
+    width: 32px;
+    height: 31px;
+}
+
+.textoInputsContacto{
+    font-size: 20px;
+    margin: 3rem 0rem;
+}
+
+#formContacto{
+    width: 50%;
+    margin: 2rem 0rem;
+}
+
+#formContacto div:not(.containerNombreTelefono){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.containerNombreTelefono{
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#formContacto label{
+    font-size: 20px;
+    text-align: left;
+}
+
+#formContacto input{
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px #0075bb solid;
+    font-size: 20px;
+    padding: 0rem 1rem;
+}
+
+#formContacto input:focus,
+#formContacto textarea:focus{
+    border: 1px #61b7e9 solid;
+    outline: none;
+}
+
+#formContacto textarea{
+    border-radius: 10px;
+    border: 1px #0075bb solid;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.buttonEnviar{
+    width: 100%;
+    background-color: #0097B2;
+    border-radius: 10px;
+    border: 1px #0097B2 solid;
+    padding: 1rem 0rem;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}

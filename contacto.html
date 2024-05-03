@@ -23,33 +23,37 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <h2>CONTACTO</h2>
-            <p>
+        <section id="sectionContacto">
+            <h2 class="tituloContacto">CONTACTO</h2>
+            <p class="textoContacto">
                 Ponte en contacto con nosotros y trataremos de responderte lo más pronto
                 posible
             </p>
-            <div>
-                <img src="./img/correo.png" alt="correo" />
-                <p>libromaniacs@gmail.com</p>
+            <div class="datosContacto">
+                <div class="dato">
+                    <img src="./img/correo.png" alt="correo" />
+                    <p>libromaniacs@gmail.com</p>
+                </div>
+                <div class="dato">
+                    <img src="./img/telefono.png" alt="telefono" />
+                    <p>+54 9 1136529843</p>
+                </div>
             </div>
-            <div>
-                <img src="./img/telefono.png" alt="telefono" />
-                <p>+54 9 1136529843</p>
-            </div>
-            <p>Déjanos tus datos y consulta para contactarte</p>
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" />
+            <p class="textoInputsContacto">Déjanos tus datos y consulta para contactarte</p>
+            <form id="formContacto" action="">
+                <div class="containerNombreTelefono">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" />
+                    </div>
                 </div>
                 <div>
                     <label for="mail">Mail</label>
                     <input type="email" />
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" />
                 </div>
                 <div>
                     <label for="asunto">Asunto</label>
@@ -61,10 +65,10 @@
                         name="mensaje"
                         id="input-mensaje"
                         cols="30"
-                        rows="5"
+                        rows="10"
                     ></textarea>
                 </div>
-                <button>Enviar</button>
+                <button class="buttonEnviar">ENVIAR</button>
             </form>
         </section>
         <footer id="footer">
