@@ -127,6 +127,6 @@ function mensajeEnviado() {
     `
 }
 
-const botonEnviar = document.querySelector(".buttonEnviar");
+const botonEnviar = document.querySelector("#buttonEnviar");
 
 botonEnviar.addEventListener("click", validation);
