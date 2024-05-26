@@ -566,7 +566,7 @@ a:link, a:visited {
 }
 
 .mainRegistro{
-    height: 80vh;
+    height: auto;
 }
 
 .bienvenidaTextoRegistro{
