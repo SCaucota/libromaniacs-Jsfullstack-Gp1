@@ -2,156 +2,224 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./index1.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/83f6c9d696.js"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
-    ></script>
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Inicio</title>
+    
   </head>
   <body>
-    <!-- Inicio Header -->
     <header>
-      <nav id="navbar">
-        <img class="logo" src="./img/logo.png" alt="logo" />
-        <ul class="navLinksCotenedor">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./tienda.html">Tienda</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li>
-            <a href="#">
-              <button class="botonRegistro">Registrarse</button>
-            </a>
-          </li>
-        </ul>
+      <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="logo" src="./img/logo.png" alt="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navLinksCotenedor">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="./pages/tienda.html">Tienda</a></li>
+              <li><a href="./pages/contacto.html">Contacto</a></li>
+              <li>
+                <button class="botonRegistro">Registrarse</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section class="hero-banner">
-      <h2 class="animate__animated animate__fadeInUp">
+    <section class="bookBanner">
+      <h2>
         “Los libros están llenos de magia, solo necesitás abrirlos para
         descubrirla”
       </h2>
     </section>
 
-    <main>
+    <main class="mainHome">
       <h1>Encontrá las mejores ofertas en LibroManiacs</h1>
 
-      <div class="container-libro-portada">
-        <section class="libro-portada">
+      <div class="containerLibroPortada">
+        <section class="libroPortada">
           <picture>
             <img
-              src="./img/harry-potter-y-la-piedra-filosofal-harry-potter-1.jpg"
+              src="./img/harry-potter-y-la-piedra-filosofal.jpg"
               alt="Imagen de libro Harry Potter y la pieda filosofal"
             />
           </picture>
-          <article class="container-texto-portada">
+          <div class="containerTextoPortada">
             <h3>HARRY POTTER Y LA PIEDRA FILOSOFAL (HARRY POTTER 1)</h3>
             <p>Reviví la saga completa</p>
             <a href="#">VER COLECCIÓN</a>
-          </article>
+          </div>
         </section>
-        <section class="libro-portada">
-          <article class="container-texto-portada">
+        <section class="libroPortada">
+          <div class="containerTextoPortada">
             <h3>JUEGO DE TRONOS (CANCIÓN DE HIELO Y FUEGO 1)</h3>
             <p>
               La monumental saga de fantasía épica del escritor George R. R.
               Martin
             </p>
             <a href="#">VER COLECCIÓN</a>
-          </article>
+          </div>
           <picture>
             <img
-              src="./img/juego-de-tronos-cancion-de-hielo-y-fuego-i.jpg"
+              src="./img/juego-de-tronos-cancion-de-hielo-y-fuego.jpg"
               alt="Imagen de libro Juego de Tronos 1"
             />
           </picture>
         </section>
-        <section class="libro-portada">
+        <section class="libroPortada">
           <picture>
             <img
-              src="./img/los-pilares-de-la-tierra-saga-los-pilares-de-la-tierra-1.jpg"
+              src="./img/los-pilares-de-la-tierra.jpg"
               alt="Imagen de libro Los Pilares de la Tierra 1"
             />
           </picture>
-          <article class="container-texto-portada">
+          <div class="containerTextoPortada">
             <h3>LOS PILARES DE LA TIERRA (KINGSBRIDGE 1)</h3>
             <p>Accedé a la Tienda para ver la obra completa!</p>
             <a href="#">VER COLECCIÓN</a>
-          </article>
+          </div>
         </section>
       </div>
 
       <section class="carousel">
         <h2>ÚLTIMOS LANZAMIENTOS</h2>
-        <button class="carousel-button prev">
+        <button id="prev" class="carouselButton prev">
           <i class="fa-solid fa-arrow-left"></i>
         </button>
 
-        <div class="carousel-wrapper">
-          <ul class="card-container">
-            <li class="carousel-card card-1">
+        <div class="carouselWrapper">
+          <ul class="cardContainer">
+            <li class="carouselCard">
               <article>
                 <a href="">
-                  <picture class="img-container">
+                  <picture class="imgContainer">
                     <img
                       src="./img/22-11-63.jpg"
                       alt="Imagen de portada del libro 22/11/63"
                     />
                   </picture>
-                  <div class="card-text">
+                  <div class="cardText">
                     <h4>22/11/63</h4>
-                    <p>$ 9.000,99</p>
+                    <p>$ 9.000</p>
                     <p>3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
             </li>
 
-            <li class="carousel-card card-2">
+            <li class="carouselCard">
               <article>
                 <a href="">
-                  <picture class="img-container">
+                  <picture class="imgContainer">
                     <img
                       src="./img/mil-soles-esplendidos.jpg"
                       alt="Imagen de portada del libro Mil Soles Espléndidos"
                     />
                   </picture>
-                  <div class="card-text">
+                  <div class="cardText">
                     <h4>MIL SOLES ESPLÉNDIDOS</h4>
-                    <p>$ 50.000,99</p>
+                    <p>$ 50.000</p>
                     <p>3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
             </li>
 
-            <li class="carousel-card card-2">
+            <li class="carouselCard">
               <article>
                 <a href="">
-                  <picture class="img-container">
+                  <picture class="imgContainer">
                     <img
                       src="./img/tiempo-de-matar.jpg"
                       alt="Imagen de portada del libro Tiempo de Matar"
                     />
                   </picture>
-                  <div class="card-text">
+                  <div class="cardText">
                     <h4>TIEMPO DE MATAR</h4>
-                    <p>$ 9.000,99</p>
+                    <p>$ 9.000</p>
                     <p>3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
             </li>
+
+            <li class="carouselCard">
+              <article>
+                <a href="">
+                  <picture class="imgContainer">
+                    <img
+                      src="./img/escrito-en-el-agua.jpg"
+                      alt="Imagen de portada del libro escrtio en el agua"
+                    />
+                  </picture>
+                  <div class="cardText">
+                    <h4>Escrito en el agua</h4>
+                    <p>$ 15.000</p>
+                    <p>3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="carouselCard">
+              <article>
+                <a href="">
+                  <picture class="imgContainer">
+                    <img
+                      src="./img/quien-mato-a-alex.jpg"
+                      alt="Imagen de portada del libro quien mato a Alex"
+                    />
+                  </picture>
+                  <div class="cardText">
+                    <h4>¿Quién mató a Alex?</h4>
+                    <p>$ 14.000</p>
+                    <p>3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="carouselCard">
+              <article>
+                <a href="">
+                  <picture class="imgContainer">
+                    <img
+                      src="./img/los-juegos-del-hambre.jpg"
+                      alt="Imagen de portada del libro los juegos del hambre"
+                    />
+                  </picture>
+                  <div class="cardText">
+                    <h4>Los juegos del hambre</h4>
+                    <p>$ 17.000</p>
+                    <p>3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
           </ul>
         </div>
 
-        <button class="carousel-button next">
+        <button id="next" class="carouselButton next">
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </section>
@@ -160,31 +228,31 @@
     <footer id="footer">
       <div class="footerIcons">
         <div class="iconsContainer">
-          <img src="./img/facebook.png" alt="facebook" />
-          <img src="./img/instagram.png" alt="instagram" />
-          <img src="./img/gmail.png" alt="gmail" />
-          <img src="./img/twitter.png" alt="twitter" />
-          <img src="./img/linkedin.png" alt="linkedin" />
+          <a href="https://www.facebook.com/?locale=es_LA"><img src="./img/facebook.png" alt="facebook" /></a>
+          <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="instagram" /></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox"><img src="./img/gmail.png" alt="gmail" /></a>
+          <a href="https://x.com/home?lang=es"><img src="./img/twitter.png" alt="twitter"/></a>
+          <a href="https://www.linkedin.com/feed/"><img src="./img/linkedin.png" alt="linkedin"/></a>
         </div>
       </div>
       <div class="footerLinksContainer">
         <div>
           <ul class="footerLinks">
             <li><a href="#">INICIO</a></li>
-            <li><a href="#">TIENDA</a></li>
-            <li><a href="#">CONTACTO</a></li>
-            <li><a href="#">REGISTRARSE</a></li>
+            <li><a href="./pages/tienda.html">TIENDA</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+            <li><a href="pruebaCarousel.html">REGISTRARSE</a></li>
           </ul>
         </div>
         <img class="footerLogo" src="./img/logo.png" alt="logo" />
         <div class="footerHorarios">
           <h3>Horario de Atención</h3>
           <div class="footerDiaHora">
-            <h4>Lunes a Viernes:</h4>
+            <h5>Lunes a Viernes:</h5>
             <p>De 08:00 a 12:00 y 17:00 a 21:00</p>
           </div>
           <div class="footerDiaHora">
-            <h4>Sábado:</h4>
+            <h5>Sábado:</h5>
             <p>De 08:00 a 12:00</p>
           </div>
         </div>
@@ -193,7 +261,10 @@
         <p>All rights reserved 2024 - LibroManiacs SRL</p>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/83f6c9d696.js" crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

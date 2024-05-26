@@ -12,12 +12,6 @@
     /* border: 1px solid black; */
 }
 
-html {
-    font-family: "Montserrat","Noto Serif", sans-serif;
-    font-size: 62.5%;
-    color: black;
-}
-
 ul, ol {
     list-style-type: none;
 }

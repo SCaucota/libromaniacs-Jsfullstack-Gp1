@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*** NORMALIZACIÓN INICIAL DE CSS ***/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
 /*----NAVBAR----*/
 #navbar{
     background-color: #0097B2;
@@ -71,7 +91,6 @@
 .footerLinksContainer{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
     align-items: center;
 }
 
@@ -106,17 +125,13 @@
 
 .footerHorarios h3{
     margin-bottom: 0px;
+    text-decoration: underline;
 }
 
 .footerDiaHora{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 0px;
-}
-
-.footerDiaHora p{
-    margin-top: 21px;
+    flex-direction: column;
+    align-items: initial;
+    margin-top: 1rem;
 }
 
 .copyright{
@@ -292,6 +307,225 @@
     padding: 1rem;
 }
 
+/*---INICIO---*/
+
+.bookBanner {
+    background-image: url(../img/Banner.png);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookBanner h2 {
+    color: rgba(0, 151, 178, 1);
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 4.5rem;
+    font-optical-sizing: auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+/*--- main ---*/
+
+.mainHome {
+    
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.mainHome section {
+    margin: 2%;
+}
+
+.mainHome h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    margin: 4% 0;
+}
+
+/*--- libro portada ---*/
+
+.libroPortada h3 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 1rem;
+}
+
+.libroPortada p {
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 1rem;
+}
+
+.libroPortada a {
+    font-size: 1.8rem;
+    text-align: center;
+    border: rgba(0, 151, 178, 1);
+    border-radius: 15px;
+    background-color: rgba(0, 151, 178, 1);
+    padding: 0.6rem;
+    margin: 1rem;
+}
+
+.libroPortada {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 2.5em;
+    width: 75%;
+}
+
+.containerLibroPortada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.containerTextoPortada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.libroPortada picture {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.libroPortada img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    min-height: 350px;
+    border-radius: 18px;
+}
+
+/*---carousel---*/
+
+.carousel h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;   
+}
+
+.carousel picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img{
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+    min-height: 450px;
+    border-radius: 18px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img:hover{
+    transform: scale(1.05, 1.05);
+    transition-duration: 1s; 
+}
+
+.carouselCard {
+    display: inline-block;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 2.5em;
+    padding: 1.7rem;
+    flex: 0 0 calc(100% / 3);
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.cardText {
+    text-align: center;
+    margin: 1%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cardText h4 {
+    font-size: 1.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.cardText p:first-of-type {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.cardText p:nth-of-type(2) {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: rgba(29, 132, 181, 1);
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carouselWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/*---carousel left and right buttons---*/
+
+.fa-solid {
+    font-size: 2rem;
+}
+
+.carouselButton {
+    background-color: rgba(0, 151, 178, 1);
+    border-radius: 5px;
+    border-color: rgba(0, 151, 178, 1);
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel {
+    position: relative;
+}
+
+.prev {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+}
+
+.next {
+    position: absolute;
+    right: -3%;
+    top: 50%;
+}
+
+
 /*--Media Queries---*/
 
 @media screen and (max-width: 700px){
@@ -362,10 +596,6 @@
     }
 
     /*---Footer---*/
-    .footerDiaHora{
-        flex-direction: column;
-        align-items: initial;
-    }
 
     .footerLinksContainer{
         gap: 0px;
