@@ -125,6 +125,7 @@ function mensajeEnviado() {
         <h3>¡Genial, ${nombreInput.value}!</h3>
         <h4>Tu mensaje se ha enviado exitosamente</h4>
     `
+    divForm.classList.add("mensajeEnviado")
 }
 
 const botonEnviar = document.querySelector("#buttonEnviar");

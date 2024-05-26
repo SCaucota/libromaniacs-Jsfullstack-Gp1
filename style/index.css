@@ -255,6 +255,13 @@ a:link, a:visited {
     font-weight: 500;
 }
 
+.mensajeEnviado{
+    background-color: #61b7e9;
+    color: black;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
 /*---TIENDA---*/
 
 #sectionTienda{
