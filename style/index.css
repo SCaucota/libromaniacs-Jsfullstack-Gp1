@@ -364,7 +364,7 @@ a:link, a:visited {
 .libroPortada h3 {
     font-size: 2rem;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 5px;
     text-align: center;
     margin: 1rem;
 }
@@ -465,7 +465,7 @@ a:link, a:visited {
     padding: 1.7rem;
     flex: 0 0 calc(100% / 3);
     box-sizing: border-box;
-    padding: 1rem;
+    padding-top: 2rem;
 }
 
 .cardText {
@@ -522,13 +522,13 @@ a:link, a:visited {
 
 .prev {
     position: absolute;
-    left: 0%;
+    left: -3%;
     top: 50%;
 }
 
 .next {
     position: absolute;
-    right: -3%;
+    right: -6%;
     top: 50%;
 }
 
@@ -579,18 +579,99 @@ a:link, a:visited {
 
 /*--Media Queries---*/
 
-@media screen and (max-width: 700px){
-    .datosContacto{
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 1230px){
+    /*--Inicio---*/
+
+    .bookBanner h2{
+        font-size: 3rem;
     }
 
-    .iconsContainer{
-        width: 80%;
+    .libroPortada img{
+        max-height: 300px;
+        min-height: 40px;
+    }
+    
+    .next{
+        right: -6%;
+    }
+
+    .prev{
+        left: -3%;
+    }
+
+    .mainHome{
+        max-width: 90%;
+    }
+
+    /*---Contacto---*/
+
+    .containerNombreTelefono{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*---Registro---*/
+    .mainRegistro{
+        height: auto;
+    }
+
+    /*---Footer---*/
+
+    .footerLinksContainer{
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    /*---Navbar---*/
+    .navLinksCotenedor{
+        gap: 50px;
+    }
+
+    /*---Inicio---*/
+    .carousel img{
+        max-height: 300px;
+        min-height: 40px;
     }
 }
 
 @media screen and (max-width: 800px){
+    /*---Inicio---*/
+    .bookBanner h2{
+        font-size: 2.5rem;
+    }
+
+    .mainHome h1{
+        font-size: 2rem;
+    }
+
+    .libroPortada img{
+        height: 25rem;
+    }
+
+    .libroPortada h3{
+        font-size: 1.5rem;
+    }
+
+    .libroPortada{
+        flex-direction: column;
+    }
+
+    .containerTextoJuegosTronos{
+        order: 2;
+    }
+
+    .libroPortada p,
+    .libroPortada a,
+    .cardText h4,
+    .cardText p{
+        font-size: 1.2rem;
+    }
+
+    .carousel h2{
+        font-size: 1.8rem;
+    }
+
     /*---Contacto---*/
 
     #form{
@@ -632,23 +713,32 @@ a:link, a:visited {
 
 }
 
-@media screen and (max-width: 950px){
-    .navLinksCotenedor{
-        gap: 50px;
+@media screen and (max-width: 700px){
+    /*---inicio---*/
+    .bookBanner h2{
+        font-size: 2rem;
     }
-}
 
-@media screen and (max-width: 1230px){
-    /*---Contacto---*/
+    .libroPortada picture{
+        width: 100%;
+    }
 
-    .containerNombreTelefono{
-        display: flex;
+    .libroPortada h3{
+        font-size: 1.2rem;
+    }
+
+    .carouselCard {
+        flex: 0 0 100%;
+    }
+
+    /*---contacto---*/
+    .datosContacto{
         flex-direction: column;
+        align-items: center;
     }
 
-    /*---Footer---*/
-
-    .footerLinksContainer{
-        gap: 0px;
+    /*---footer---*/
+    .iconsContainer{
+        width: 80%;
     }
 }

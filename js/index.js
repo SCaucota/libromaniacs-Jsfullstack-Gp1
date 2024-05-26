@@ -2,7 +2,7 @@ const leftButton = document.querySelector(".prev");
 const rightButton = document.querySelector(".next");
 const cardWrapper = document.querySelector(".carouselWrapper");
 const cards = document.querySelectorAll(".carouselCard");
-const itemsToShow = 3;
+const itemsToShow = 1;
 let currentIndex = 0;
 const totalItems = cards.length;
 
