@@ -115,7 +115,7 @@ function validation(event) {
     }
 }
 
-const divForm = document.getElementById("formContacto");
+const divForm = document.querySelector(".formContacto");
 const textoInputs = document.querySelector(".textoInputsContacto")
 
 function mensajeEnviado() {

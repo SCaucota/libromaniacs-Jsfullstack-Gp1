@@ -6,14 +6,14 @@ const itemsToShow = 3;
 let currentIndex = 0;
 const totalItems = cards.length;
 
-rightButton.addEventListener('click', () => {
+rightButton.addEventListener("click", () => {
     if (currentIndex < totalItems - itemsToShow) {
         currentIndex += itemsToShow;
         updateCarousel();
     }
 });
 
-leftButton.addEventListener('click', () => {
+leftButton.addEventListener("click", () => {
     if (currentIndex > 0) {
         currentIndex -= itemsToShow;
         updateCarousel();

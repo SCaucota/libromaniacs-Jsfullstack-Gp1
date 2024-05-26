@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img class="logo" src="../img/logo.png" alt="logo" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navLinksCotenedor">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./tienda.html">Tienda</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li>
+                            <a href="#" class="botonRegistro">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainRegistro" >
+        <section id="setionRegistro" >
+            <h2 class="titulo">REGISTRO</h2>
+            <form id="form" class="formRegistro" action="#">
+                <div class="divInputNombre" >
+                    <label for="nombreRegistro">Nombre:</label>
+                    <input type="text" name="nombreRegistro" id="nombreRegistro">
+                </div>
+                <div class="divInputApellido" >
+                    <label for="apellidoRegistro">Apellido:</label>
+                    <input type="text" name="apellidoRegistro" id="apellidoRegistro">
+                </div>
+                <div class="divInputEmail" >
+                    <label for="emailRegistro">Email:</label>
+                    <input type="text" name="emailRegistro" id="emailRegistro">
+                </div>
+                <div class="divInputContraseña">
+                    <label for="contraseñaRegistro">Contraseña:</label>
+                    <div class="containerContraseña">
+                        <input type="password" name="contraseñaRegistro" id="contraseñaRegistro"/>
+                        <img src="../img/ver.png" alt="icono ver u ocultar contraseña" id="imgVisualizarContraseña">
+                    </div>
+                </div>
+                <button id="botonRegistro" class="boton" >REGISTRARME</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footerIcons">
+            <div class="iconsContainer">
+                <a href="https://www.facebook.com/?locale=es_LA"><img src="../img/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="instagram" /></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><img src="../img/gmail.png" alt="gmail" /></a>
+                <a href="https://x.com/home?lang=es"><img src="../img/twitter.png" alt="twitter"/></a>
+                <a href="https://www.linkedin.com/feed/"><img src="../img/linkedin.png" alt="linkedin"/></a>
+            </div>
+        </div>
+        <div class="footerLinksContainer">
+            <div>
+                <ul class="footerLinks">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./tienda.html">TIENDA</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                    <li><a href="#">REGISTRARSE</a></li>
+                </ul>
+            </div>
+            <img class="footerLogo" src="../img/logo.png" alt="logo" />
+            <div class="footerHorarios">
+                <h3>Horario de Atención</h3>
+                <div class="footerDiaHora">
+                    <h5>Lunes a Viernes:</h5>
+                    <p>De 08:00 a 12:00 y 17:00 a 21:00</p>
+                </div>
+                <div class="footerDiaHora">
+                    <h5>Sábado:</h5>
+                    <p>De 08:00 a 12:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>All rights reserved 2024 - LibroManiacs SRL</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="../js/registro.js" ></script>
+</body>
+</html>

@@ -190,12 +190,12 @@ a:link, a:visited {
     margin: 3rem 0rem;
 }
 
-#formContacto{
+#form{
     width: 50%;
     margin: 2rem 0rem;
 }
 
-#formContacto div:not(.containerNombreTelefono){
+#form div:not(.containerNombreTelefono){
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -208,13 +208,13 @@ a:link, a:visited {
     gap: 20px;
 }
 
-#formContacto label{
+#form label{
     font-size: 20px;
     text-align: left;
 }
 
-#formContacto input,
-#formContacto select{
+#form input,
+#form select{
     height: 3rem;
     border-radius: 10px;
     border: 1px #0075bb solid;
@@ -222,14 +222,14 @@ a:link, a:visited {
     padding: 0rem 1rem;
 }
 
-#formContacto input:focus,
-#formContacto textarea:focus,
-#formContacto select:focus{
+#form input:focus,
+#form textarea:focus,
+#form select:focus{
     border: 1px #61b7e9 solid;
     outline: none;
 }
 
-#formContacto textarea{
+#form textarea{
     border-radius: 10px;
     border: 1px #0075bb solid;
     padding: 1rem;
@@ -525,6 +525,50 @@ a:link, a:visited {
     top: 50%;
 }
 
+/*---REGISTRO---*/
+#setionRegistro{
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.containerContraseña{
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1rem;
+}
+
+.containerContraseña input{
+    flex: 1;
+}
+
+.containerContraseña img{
+    width: 3%;
+    height: 3%;
+    cursor: pointer;
+}
+
+.errorContraseña ul{
+    color: red;
+    text-align: left;
+}
+
+.mainRegistro{
+    height: 80vh;
+}
+
+.bienvenidaTextoRegistro{
+    margin-bottom: 2rem;
+}
+
+.botonVolverInicio{
+    padding: 1rem 5rem;
+}
 
 /*--Media Queries---*/
 
@@ -542,7 +586,7 @@ a:link, a:visited {
 @media screen and (max-width: 800px){
     /*---Contacto---*/
 
-    #formContacto{
+    #form{
         width: 100%;
     }
 
